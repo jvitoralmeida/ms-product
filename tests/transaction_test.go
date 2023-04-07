@@ -9,6 +9,7 @@ import (
 
 func TestMain(m *testing.M) {
 	database.DbConnection()
+	database.RunMigrations()
 	m.Run()
 }
 
