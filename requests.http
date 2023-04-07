@@ -1,0 +1,30 @@
+### GET product by id
+GET http://localhost:8081/product/1
+Accept: application/json
+
+### GET all prodcuts
+GET http://localhost:8081/products
+Accept: application/json
+
+### POST create new product
+POST http://localhost:8081/product
+Content-Type: application/json
+
+{
+  "id": 6,
+  "name": "Xícara",
+  "price": 5.00
+}
+
+### DELETE a product
+DELETE http://localhost:8081/product/3
+Content-Type: application/json
+
+### PUT update a product
+PUT http://localhost:8081/product/50
+Content-Type: application/json
+
+{
+  "name": "Copo Descartável",
+  "price": 5.00
+}
